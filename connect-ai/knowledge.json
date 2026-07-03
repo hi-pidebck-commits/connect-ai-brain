@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "id": "note-jeoksan-001",
+    "text": "적산(건설 공사비 산출) 시스템을 GLM API와 Claude Code 기반으로 개발 중. 목표는 사람이 손으로 하던 적산 작업을 AI로 자동화하는 것. 대용량 도면/물량 데이터 처리를 위해 API 용량 증설도 검토 중.",
+    "tags": ["적산", "GLM", "Claude Code", "자동화"],
+    "ts": 1783070000000,
+    "category": "business",
+    "source": "me",
+    "verified": true
+  },
+  {
+    "id": "note-jeoksan-002",
+    "text": "jeoksan 엔진의 절대 원칙: 모든 수치는 함수로 계산하고 실행 결과를 사용한다. 재료비/노무비/경비 분해 구조를 지원하되, 입력 단가가 공급가액 통합 단가면 '통합'으로 표기하고 분해 필요성을 보고한다.",
+    "tags": ["jeoksan", "설계원칙", "적산엔진"],
+    "ts": 1783070100000,
+    "category": "coding",
+    "source": "me",
+    "verified": true
+  },
+  {
+    "id": "note-jeoksan-003",
+    "text": "RC 기둥 적산(column.py): 콘크리트량(㎥) = 단면적 × 높이 × 개수. 거푸집 면적(㎡) = 둘레 × 높이 × 개수(바닥면 제외). 모든 치수/개수는 음수 불가, ValueError로 검증.",
+    "tags": ["jeoksan", "기둥", "column.py", "콘크리트량"],
+    "ts": 1783070200000,
+    "category": "coding",
+    "source": "me",
+    "verified": true
+  },
+  {
+    "id": "note-jeoksan-004",
+    "text": "RC 보 적산(beam.py): 콘크리트량(㎥) = 폭 × 춤 × 길이 × 개수. 거푸집(㎡) = (양측면 2×춤×길이 + 밑면 폭×길이) × 개수, 윗면은 슬래브 접합부라 제외. column.py의 공통 엔진(Item, totals)을 재사용.",
+    "tags": ["jeoksan", "보", "beam.py", "거푸집"],
+    "ts": 1783070300000,
+    "category": "coding",
+    "source": "me",
+    "verified": true
+  },
+  {
+    "id": "note-jeoksan-005",
+    "text": "로컬 AI 환경: 집 컴퓨터에 GBrain(개인 AI 메모리 시스템)을 Ollama gemma3:27b-it-qat로 구동 중이고, Connect AI 앱으로 로컬 AI 팀을 관리. 상업 이용이 자유로운 Qwen 계열 경량 모델로 커스텀 AI를 학습·진화(병합)시킬 계획.",
+    "tags": ["GBrain", "Connect AI", "Ollama", "Qwen"],
+    "ts": 1783070400000,
+    "category": "general",
+    "source": "me",
+    "verified": true
+  }
+]
